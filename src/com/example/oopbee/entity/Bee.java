@@ -65,7 +65,7 @@ public abstract class Bee {
         if (this.isAlive()) {
 
             // Random 1 -> 100
-            Random rand = new Random();
+            private Random rand = SecureRandom.getInstanceStrong();
             int damageAmount = rand.nextInt(100) + 1;
 
             int delta = this.getHealth() - damageAmount;
