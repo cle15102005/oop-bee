@@ -29,7 +29,7 @@ public class BeeUI {
             logger.log("\t3 - Exit");
             logger.log("Enter your choice (1, 2 or 3): ");
             choice = s.nextInt();
-            private Set<Bee> bees = new HashSet<Bee>();
+            private Set<Bee> bees;
             switch (choice) {
                 case 1:
                     bh = new BeeHive();

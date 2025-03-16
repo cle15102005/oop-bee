@@ -82,6 +82,6 @@ public abstract class Bee {
 
     @Override
     public String toString() {
-        return this.getType() + "\t" + this.getHealth() + "\t" + (isAlive() == true ? "alive" : "dead");
+        return this.getType() + "\t" + this.getHealth() + "\t" + (isAlive() ? "alive" : "dead");
     }
 }
