@@ -25,7 +25,7 @@ public class BeeHive {
 
 
         // Random from 1 -> 3
-        Random rand = new Random();
+        private Random rand = SecureRandom.getInstanceStrong(); 
 
         for (int i = 0 ; i < 7 ; i++) {
             int r = rand.nextInt(3) + 1;
