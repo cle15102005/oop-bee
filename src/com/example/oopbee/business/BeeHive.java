@@ -12,7 +12,7 @@ import java.util.Random;
  * Logic class: create bee list, attack bee
  */
 public class BeeHive {
-    private ArrayList<Bee> listBee;
+    private Set<Bee> listBee = new HashSet<Bee>();
 
     public void init() {
         //create list of 10 bees  of Queen, Drone and Worker types
@@ -42,7 +42,7 @@ public class BeeHive {
         }
     }
 
-    public ArrayList<Bee> getAllBees() {
+    public Set<Bee> getAllBees() {
         return listBee;
     }
 
